@@ -10,5 +10,7 @@ USER node
 
 WORKDIR /blog
 
+EXPOSE 4000
+
 ENTRYPOINT [ "hexo" ]
 CMD [ "help" ]
