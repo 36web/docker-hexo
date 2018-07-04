@@ -4,7 +4,7 @@ LABEL AUTHOR 36web<36bweb.rocks@gmail.com>
 
 RUN npm install -g hexo-cli \
     && npm cache clear --force \
-	&& rm -rf /tmp/* \
+    && rm -rf /tmp/* \
     && mkdir /blog \
     && chown node:node /blog
 
