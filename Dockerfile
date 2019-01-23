@@ -1,8 +1,9 @@
-FROM node:10
+FROM node:10-alpine
 
-LABEL AUTHOR 36web<36bweb.rocks@gmail.com>
+LABEL AUTHOR Chris<36bweb.rocks@gmail.com>
 
-RUN npm install -g hexo-cli \
+RUN apk add --no-cache git \
+    && npm install -g hexo-cli \
     && npm cache clear --force \
     && rm -rf /tmp/* \
     && mkdir /blog \
